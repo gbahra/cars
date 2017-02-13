@@ -1,0 +1,21 @@
+<header>
+  <img src="">
+  <h1>Car Tube</h1>
+</header>
+<main>
+ <div>
+   <h3><%= cars.name %></a></h3>
+   <p><%= cars.price %></p>
+   <p><%= cars.condition %></p>
+   <p><%= cars.year %></p>
+   <p><%= cars.body %></p>
+   <p><%= cars.color %></p>
+ </div>
+
+  <a href="/<%= cars.id %>/edit">edit</a>
+  <form class="delete" action="/<%= cars.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="delete">
+  </form>
+</main>
+<footer></footer>
